@@ -1,0 +1,3 @@
+[ https://www.interviewcake.com/concept/python3/topological-sort]
+[ https://leetcode.com/discuss/general-discussion/1078072/introduction-to-topological-sort ]
+[ https://leetcode.com/problems/longest-increasing-path-in-a-matrix/discuss/288520/Longest-Path-in-DAG ]

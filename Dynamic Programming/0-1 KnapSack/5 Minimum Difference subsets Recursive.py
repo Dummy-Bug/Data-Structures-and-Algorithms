@@ -1,3 +1,5 @@
+class solution:
+    
     def minDifference(self, arr, n):
         # code is explained in Memiozation part
         return self.diff(arr,n,sum(arr),0)

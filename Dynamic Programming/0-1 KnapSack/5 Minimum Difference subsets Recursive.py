@@ -16,4 +16,4 @@ class solution:
             
             return min(included,not_included)
         else:
-            return abs(s2 - s1)
+            return abs(s2 - s1) # you can also return self.diff(arr,n-1,s1,s2)

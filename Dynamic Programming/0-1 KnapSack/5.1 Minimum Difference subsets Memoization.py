@@ -1,4 +1,5 @@
 class Solution:
+    
 	def minDifference(self, arr, n):
 	  
 	    temp = [[-1 for j in range(sum(arr)+1)] for i in range(n+1)]

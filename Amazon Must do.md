@@ -88,4 +88,39 @@ Word Break (22 times):    [https://leetcode.com/problems/word-break/     ]
 
 Word Search (19 times):   [ https://leetcode.com/problems/word-search/   ]
 
+Lowest Common Ancestor of a Binary Tree (19 times): [ https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/ ] 
+
+Construct Binary Tree from Preorder and Inorder Traversal (19 times): [ https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ ]
+
+Minimum Window Substring (18 times): [ https://leetcode.com/problems/minimum-window-substring/ ]
+
+Valid Parentheses (17 times): [ https://leetcode.com/problems/valid-parentheses/ ]
+
+Concatenated Words (17 times): [ https://leetcode.com/problems/concatenated-words/ ]
+
+Decode String (17 times): [ https://leetcode.com/problems/decode-string/ ]
+
+Search a 2D Matrix (16 times): [ https://leetcode.com/problems/search-a-2d-matrix/ ]
+
+Maximum Subarray (16 times): [ https://leetcode.com/problems/maximum-subarray/ ]
+
+Permutations (16 times):[ https://leetcode.com/problems/permutations/ ]
+
+Search in Rotated Sorted Array (16 times): [ https://leetcode.com/problems/search-in-rotated-sorted-array/ ]
+
+Best Time to Buy and Sell Stock III (15 times):[ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/ ]
+
+Top K Frequent Elements (15 times):[  https://leetcode.com/problems/top-k-frequent-elements/ ]
+
+Design Tic-Tac-Toe (15 times): [ https://leetcode.com/problems/design-tic-tac-toe/ ]
+
+Reverse Linked List (14 times): [ https://leetcode.com/problems/reverse-linked-list/ ]
+
+Reorganize String (14 times): [ https://leetcode.com/problems/reorganize-string/ ] 
+
+Integer to English Words (14 times): [ https://leetcode.com/problems/integer-to-english-words/ ]
+
+
+
+
 

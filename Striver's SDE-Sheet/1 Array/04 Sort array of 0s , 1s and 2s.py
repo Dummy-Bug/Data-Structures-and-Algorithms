@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/sort-colors/
 
 class Solution:
-    def sortColors(self, nums: List[int]) -> None:
+    def sortColors(self, nums) :
         """
         Do not return anything, modify nums in-place instead.
         """

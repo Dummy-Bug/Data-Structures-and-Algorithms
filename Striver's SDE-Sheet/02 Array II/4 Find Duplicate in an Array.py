@@ -2,7 +2,7 @@
 # solution using negative marking was also intuitive 
 
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
+    def findDuplicate(self, nums: ):
         # Solution is not acceptable as we are changing the actual elements present in the Array.  
         i = 0
         while (1):

@@ -8,6 +8,7 @@ class Solution:
         while (1):
             
             ele = nums[i]
+            
             if ele == nums[ele]:
                 return ele
             

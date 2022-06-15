@@ -1,0 +1,9 @@
+* Open the folder where Main.java is in CMD
+
+* then type javac Main.java 
+
+* The Java Compiler 'javac' will convert the code into Byte code 
+
+* To get the executable file we can just directly run the code using Vscode or 
+
+* use comand  " java Main " to View the output using CMD

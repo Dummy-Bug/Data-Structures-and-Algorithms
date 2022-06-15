@@ -1,4 +1,5 @@
 * Open the folder where Main.java is in CMD
+* Or we can directly use the Vscode Terminal also
 
 * then type javac Main.java 
 

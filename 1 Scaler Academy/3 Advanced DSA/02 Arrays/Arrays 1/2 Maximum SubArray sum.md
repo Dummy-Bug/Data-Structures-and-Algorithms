@@ -6,7 +6,8 @@ Find the contiguous non-empty subarray within an array, A of length N, with the 
 
 **Kadanes will give us maximum sum among all subarrays ending at any index i**
 
-### Python Code:-
+### Python Code
+
 ```
 class Solution:
 

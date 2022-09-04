@@ -6,6 +6,7 @@ If the input linked list has 1 node, then this node should be deleted and a null
 **Notes**
 
 > Use two pointers where slow and fast by the end of the loop slow will point to the middle node of the Linekd List;
+> Maintain a prev pointer that will point to the previous node of the middle node.
 > Remember Dummy Node is onluy used whene we have to return the different head or our the need of question is that our head may change;
 
 ```

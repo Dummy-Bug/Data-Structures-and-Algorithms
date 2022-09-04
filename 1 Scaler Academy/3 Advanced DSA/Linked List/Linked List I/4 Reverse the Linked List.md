@@ -2,6 +2,11 @@
 
 https://www.interviewbit.com/problems/reverse-linked-list/
 
+-- Given m, n satisfy the following condition:
+
+1 ≤ m ≤ n ≤ length of list.
+
+---
 
 **Notes**
 

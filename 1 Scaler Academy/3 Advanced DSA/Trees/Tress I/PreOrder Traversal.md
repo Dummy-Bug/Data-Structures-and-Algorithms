@@ -1,0 +1,46 @@
+### PreOrder traversal using Stack
+
+https://www.interviewbit.com/problems/preorder-traversal/
+
+
+**Solution Approach**
+
+Think about using Stack.
+
+Recursive call would look something like this :
+
+print(root->val);
+preorderprint(root->left);
+preorderprint(root->right);
+
+Instead of calling the functions, can you put the nodes on a stack and process them?
+
+
+```
+
+from collections import deque;
+
+class Solution:
+
+	def preorderTraversal(self, A):
+
+		if not A:
+			return ;
+
+		stack = deque([A]);
+		preOrder = [];
+
+		while stack:
+			node = stack.pop();
+
+			preOrder.append(node.val);
+
+			if node.right:
+				stack.append(node.right);
+			if node.left:
+				stack.append(node.left);
+		return preOrder;
+
+```		
+
+

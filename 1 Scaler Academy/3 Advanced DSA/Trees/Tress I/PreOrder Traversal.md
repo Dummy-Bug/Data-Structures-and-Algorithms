@@ -15,6 +15,13 @@ preorderprint(root->right);
 
 Instead of calling the functions, can you put the nodes on a stack and process them?
 
+**Notes**
+
+-> We can take the visited array and solve pre,post and in Order traversla problem
+
+-> We can also modify the original input and solve these problems but we have to
+
+-> solve these problems without above methods
 
 ```
 

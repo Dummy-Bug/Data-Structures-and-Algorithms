@@ -103,5 +103,33 @@ class Solution:
   ```      
 
 
-        
+  **Best One**
+  
+  ```
+  
+  from collections import deque;
+
+class Solution:
+
+	def inorderTraversal(self, A):
+
+        stack = deque([]);
+        curr  = A; inorderList = [];
+    
+        while stack or curr:
+
+            while curr:
+
+                stack.append(curr);
+                curr = curr.left;
+            
+            curr = stack.pop();
+            inorderList.append(curr.val);
+            curr = curr.right;
+        return inorderList;
+
+
+    
+  
+  ```
 

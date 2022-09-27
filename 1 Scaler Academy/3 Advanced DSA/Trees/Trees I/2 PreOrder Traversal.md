@@ -51,3 +51,32 @@ class Solution:
 ```		
 
 
+**Best One**
+
+```
+
+from collections import deque;
+
+class Solution:
+
+	def preorderTraversal(self, A):
+
+        stack = deque([]);
+        curr  = A; preorderList = [];
+    
+        while stack or curr:
+
+            while curr:
+                preorderList.append(curr.val);
+                stack.append(curr);
+                curr = curr.left;
+
+            curr = stack.pop();
+            curr = curr.right;
+            
+        return preorderList;
+
+
+```
+
+

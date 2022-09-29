@@ -91,6 +91,67 @@ This is because all the strings that have as prefix must have visited this node 
 
 ```
 
+class TrieNode():
+
+    def __init__(self,data):
+
+        self.data = data;
+        self.children   = [None]*26;
+        self.isEnd      = False;
+        self.freq_count = 0;
+     
+class Trie():
+
+    def __init__(self):
+
+        self.root = TrieNode('#');
+
+    def insert(self,word):
+
+        curr = self.root;
+        size = len(word);
+
+        for i in range(size):
+            index = ord(word[i]) - ord('a');
+
+            if curr.children[index] == None:
+                curr.children[index] = TrieNode(word[i]);
+            
+            curr = curr.children[index];
+            curr.freq_count += 1;
+        
+        curr.isEnd = True;
+
+    def search(self,word):
+
+        curr = self.root;
+        size = len(word);
+
+        for i in range(size):
+            index = ord(word[i]) - ord('a');
+
+            if curr.children[index] == None:
+                return 0;
+            curr = curr.children[index];
+        
+        return curr.freq_count;
+
+class Solution:
+
+    def solve(self, A, B):
+
+        Trie_object = Trie();
+        result = [];
+
+        for i in range(len(A)):
+            query = A[i];
+
+            if query == 0:
+                Trie_object.insert(B[i]);
+            else:
+                result.append(Trie_object.search(B[i]));
+            
+        return result;
 
 
 ```

@@ -42,3 +42,24 @@ Similarly, If we move to the right, the min value in the right subtree should be
 
 In this, we are traversing each node only once. So, the time complexity is O(n).
 
+
+```
+class Solution:
+
+	def isValidBST(self, A):
+
+		return self.ValidBst(A,-1,float('inf'));
+	
+	def ValidBst(self,node,left_max,right_max):
+
+		if not node:
+			return 1;
+		if node.val < left_max or node.val > right_max:
+			return 0;
+		left  = self.ValidBst(node.left,left_max,node.val-1)
+		right = self.ValidBst(node.right,node.val+1,right_max)
+		
+		return 0 if not (left and right ) else 1;
+		
+
+```

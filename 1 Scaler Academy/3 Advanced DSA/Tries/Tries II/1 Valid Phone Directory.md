@@ -72,6 +72,10 @@ We will use tries to search for prefix.
 One by one search keep inserting the string in the trie and before inserting check whether there exist a word with prefix equal to current word, if it exists then return 0 else insert the current word in the trie and repeat the steps.
 
 Time Complexity : O(NM) where M is the max length of a phone number.
+
+
+**Using Sorting**
+
  
  ```
  
@@ -135,3 +139,70 @@ class Solution:
         return 1;
  
  ```
+ 
+ 
+ **Without Sorting**
+
+
+```
+
+class TrieNode:
+
+    def __init__(self,val):
+        
+        self.val = val;
+        self.children = [None]*10;
+        self.IsEnd = False;
+
+class Trie:
+
+    def __init__(self):
+
+        self.root = TrieNode('#');
+    
+    def insertion(self,word):
+
+        curr = self.root;
+        size = len(word);
+
+        for i in range(size):
+
+            index = int(word[i]);
+
+            if curr.children[index] == None:
+                curr.children[index] = TrieNode(word[i]);
+            
+            curr = curr.children[index];
+        
+        curr.IsEnd = True;
+    
+    def search(self,word):
+
+        curr = self.root;
+        size = len(word);
+
+        for i in range(size):
+
+            index = int(word[i]);
+
+            if curr.IsEnd == True:
+                return 0;
+
+            if curr.children[index] == None:
+                return 1; # means string is not present with given prefix
+            curr = curr.children[index];
+        return 0 ; # if we reach here means the current string is smaller
+                   # of the prefix or curr string is the prefix 
+class Solution:
+
+    def solve(self, A):
+
+        Trie_obj = Trie();
+        # A.sort();
+        for phone_dir in A:
+            if  Trie_obj.search(phone_dir) == 0:
+                return 0;
+            Trie_obj.insertion(phone_dir);
+        return 1;
+
+```

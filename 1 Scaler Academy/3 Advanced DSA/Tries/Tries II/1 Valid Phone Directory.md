@@ -63,6 +63,16 @@ Explanation 2:
  "001" is prefix of "00121" so phone directory is invalid so we will return 0.
  
  
+ **Solution Approach**
+ 
+ --> Tries:
+
+We will use tries to search for prefix.
+
+One by one search keep inserting the string in the trie and before inserting check whether there exist a word with prefix equal to current word, if it exists then return 0 else insert the current word in the trie and repeat the steps.
+
+Time Complexity : O(NM) where M is the max length of a phone number.
+ 
  ```
  
  class TrieNode:

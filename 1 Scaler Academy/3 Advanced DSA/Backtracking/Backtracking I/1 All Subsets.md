@@ -83,10 +83,39 @@ class Solution:
             self.AllSubsets.append(list(curr_stack));
             return;
         
-        self.backtrack(arr,curr_index+1,curr_stack);
         curr_stack.append(arr[curr_index]);
         self.backtrack(arr,curr_index+1,curr_stack);
         curr_stack.pop();
+        self.backtrack(arr,curr_index+1,curr_stack);
         
 
+```
+
+
+**Notes**
+
+*- Following method is far more better than above method as it will help to solve most of the further questions
+
+```
+
+class Solution:
+    
+    ### DFS ###
+    
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        self.backtracking(res,0,[],nums)
+        return res
+    
+    def backtracking(self,res,start,subset,nums):
+    
+        res.append(list(subset))
+        
+        for i in range(start,len(nums)): # we have just replaced 2nd funcion call with for loop
+                                         # as 2nd function call was only increasing the index till len(nums)
+            subset.append(nums[i])       # Thus for loop is helping us to skip the elements just like previous method.
+            self.backtracking(res,i+1,subset,nums)
+            subset.pop()
+	    
+	    
 ```

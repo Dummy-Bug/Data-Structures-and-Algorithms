@@ -2,8 +2,9 @@
 
 https://leetcode.com/problems/permutations-ii/submissions/
 
-```
 
+
+```
 class Solution:
     # @param A : list of integers
     # @return a list of list of integers
@@ -26,9 +27,10 @@ def generatePerms(arr,currentPerm,usedInds,allPerms):
             usedInds.remove(i)
             currentPerm.pop()
             
-     ```
-     
-     **LeetCode has better explanations and solutions**
+ ```
+
+
+**LeetCode has better explanations and solutions**
 
 
 ```

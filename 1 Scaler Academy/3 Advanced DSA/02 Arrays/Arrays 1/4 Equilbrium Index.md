@@ -48,7 +48,7 @@ class Solution:
         for i in range(len(A)):
 
             left_sum += A[i];
-            
+            # now ith elelment is both in left and right sum 
             if left_sum == right_sum:
                 return "YES";
                 

@@ -3,6 +3,11 @@
 
 https://www.interviewbit.com/problems/first-missing-integer/
 
+
+**In-Short**
+
+-> We try to place nums[i] at it's required position iff nums[i] is +ve and less than size of array(so that nums[i] can be used as indices).
+
 **Hints**
 
 

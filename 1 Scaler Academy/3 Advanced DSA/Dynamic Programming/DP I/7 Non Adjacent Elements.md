@@ -122,3 +122,37 @@ ELSE
  
  
 ```
+
+
+```
+
+import sys;
+sys.setrecursionlimit(10**9);
+class Solution:
+
+    def adjacent(self, V):
+
+        temp = [];
+        for i in range(len(V[0])):
+            temp.append(max(V[0][i],V[1][i]));
+        self.dp = [-1]*len(temp);
+        self.dp[0] = temp[0];
+        if len(temp) == 1:
+            return temp[0];
+            
+        self.dp[1] = max(temp[0],temp[1]);
+        self.helper(temp,len(temp)-1);
+        return self.dp[len(temp)-1];
+    
+    def helper(self,arr,index):
+        if self.dp[index] != -1:
+            return self.dp[index];
+        
+        included = self.helper(arr,index-2) + arr[index] ;
+        excluded = self.helper(arr,index-1);
+        self.dp[index] = max(included,excluded);
+
+        return self.dp[index];
+        
+
+```

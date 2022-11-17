@@ -1,4 +1,4 @@
-Problem Description
+### Problem Description
 Given the number of vertices A in a Cyclic Graph.
 
 Your task is to determine the minimum number of colors required to color the graph so that no two Adjacent vertices have the same color.
@@ -48,6 +48,19 @@ Explanation 2:
  
  Color required = 2
 
+
+**SOlution Approach**
+
+Cycle:- cycle is a path of edges and vertices wherein a vertex is reachable from itself. or in other words, it is a Closed walk.
+
+Even Cycle:- In which Even number of vertices is present is known as Even Cycle.
+
+Odd Cycle:- In which Odd number of Vertices is present is known as Odd Cycle.
+
+Approach:
+
+If the no. of vertices is Even then it is Even Cycle and to color such graph we require 2 colors.
+If the no. of vertices is Odd then it is Odd Cycle and to color such graph we require 3 colors.
 
 ```
 

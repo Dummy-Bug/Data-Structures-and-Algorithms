@@ -129,6 +129,64 @@ class Solution:
         # print(ans)
         return -1;
                     
-                      
+# Code Seems correct but was giving error in some testCases                      
+
+```
+```
+
+from collections import deque
+
+class Solution:
+    def get_neighbours(self, node, N, M):
+
+        potential_nodes = [
+            (node[0] + 2, node[1] + 1),  (node[0] + 1, node[1] + 2),
+            (node[0] + 2, node[1] - 1),  (node[0] + 1, node[1] - 2),
+            (node[0] - 2, node[1] + 1),  (node[0] - 1, node[1] + 2),
+            (node[0] - 2, node[1] - 1),  (node[0] - 1, node[1] - 2),
+        ]
+
+        neighbours = []
+        for potential_node in potential_nodes:
+            if 0 <= potential_node[0] and 0 <= potential_node[1] and potential_node[0] < N and potential_node[1] < M:
+                neighbours.append(potential_node)
+
+        return neighbours
+
+    def knight(self, N, M, x1, y1, x2, y2):
+        x1 -= 1
+        y1 -= 1
+        x2 -= 1
+        y2 -= 1
+
+        # M columns, N row
+        table_count = [[1000000000 for x in range(M)] for x in range(N)]
+        table_visited = [[False for x in range(M)] for x in range(N)]
+
+        table_count[x1][y1] = 0
+        queue = deque([(x1, y1)])
+        # breath search
+
+        while len(queue) != 0:
+
+            node = queue.pop()
+
+            if table_visited[node[0]][node[1]]:
+                continue
+
+            # print node
+            table_visited[node[0]][node[1]] = True
+
+            neighbours = self.get_neighbours(node, N, M)
+            for neighbour in neighbours:
+
+                queue.appendleft(neighbour)
+                table_count[neighbour[0]][neighbour[1]] = min(
+                    table_count[neighbour[0]][neighbour[1]], table_count[node[0]][node[1]] + 1)
+
+        if table_count[x2][y2] != 1000000000:
+            return table_count[x2][y2]
+        else:
+            return -1
 
 ```

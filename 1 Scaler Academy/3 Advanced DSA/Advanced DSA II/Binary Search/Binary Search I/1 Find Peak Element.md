@@ -50,6 +50,7 @@ Explanation 2:
  100 is the peak.
 
 
+**Solution Approach**
 
 ```
 

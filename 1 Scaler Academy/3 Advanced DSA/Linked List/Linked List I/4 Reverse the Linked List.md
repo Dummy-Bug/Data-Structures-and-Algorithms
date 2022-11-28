@@ -38,3 +38,27 @@ class Solution:
         return prev_node;
 
 ```
+
+**Better Code**
+
+```
+
+class Solution:
+
+	def reverseList(self, head):
+
+        if not head or not head.next:
+            return head;
+        
+        prev_node = None;next_node = None;
+        curr_node = head;
+
+        while curr_node:
+            next_node = curr_node.next;
+            curr_node.next = prev_node;
+            prev_node  = curr_node;
+            curr_node  = next_node;
+        
+        return prev_node;
+
+```

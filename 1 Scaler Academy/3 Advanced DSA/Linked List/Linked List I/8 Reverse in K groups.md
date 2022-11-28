@@ -19,16 +19,14 @@ class Solution:
     def reverselist(self,curr_node,count):
 
         prev_node = None;
-        next_node = curr_node.next;
+        next_node = None;
 
         while count != 0 :
             count -= 1;
+            next_node = curr_node.next;
             curr_node.next = prev_node;
             prev_node  = curr_node;
             curr_node  = next_node;
-            if next_node == None:
-                continue;
-            next_node = next_node.next;
         
         return [prev_node,curr_node];
 
@@ -40,7 +38,6 @@ class Solution:
         prev_link = dummy;
 
         curr = A;
-
         while curr:
             
             last_node = curr;
@@ -51,6 +48,9 @@ class Solution:
             curr = next_node;
         
         return dummy.next;
+    
+
+
     
 
 ```

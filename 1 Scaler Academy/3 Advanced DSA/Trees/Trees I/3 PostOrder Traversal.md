@@ -33,4 +33,32 @@ class Solution:
 
 ```
 
+**Best One Just like PreOrder**
 
+
+```
+
+# Definition for a  binary tree node
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    # @param A : root node of tree
+    # @return a list of integers
+    def postorderTraversal(self, A):
+        res = []
+        stack = [A]
+        while stack:
+            pop = stack.pop()
+            res.append(pop.val)
+            if pop.left:
+                stack.append(pop.left)
+            if pop.right:
+                stack.append(pop.right)
+        
+        return res[::-1]
+
+```

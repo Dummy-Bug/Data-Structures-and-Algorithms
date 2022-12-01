@@ -64,7 +64,19 @@ Explanation 2:
  Each element of the array denotes the value of the node. If the val is -1 then it is the NULL/None child.
  Since 3 has left child as NULL while 4 and 5 each has both NULL child.
 
+**Solution Approach**
 
+ We can do this simply by using a queue data structure.
+
+ We know that the root node will always be the first element of level order traversal.
+ Create a root node and push the root node into the queue.
+
+ Now, run a loop until the queue is empty and keep a variable, let’s say i, for denoting the current index in the Level Order Traversal.
+
+ Pop the Node: If the node is not NULL, then the element at index i will be the left child, and the element at i+1 will be the right child.
+ Create those children and push the left child and right child of the node, respectively, in the queue.
+
+ After building the tree, return the root node
 
 ```
 

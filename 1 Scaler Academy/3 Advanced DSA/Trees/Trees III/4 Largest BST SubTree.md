@@ -108,15 +108,16 @@ class Solution:
         ret.size = 1 + l.size + r.size
 
         if l.isBST and r.isBST and l.max_val < root.val and r.min_val > root.val:
-            ret.min_val = min(l.min_val, min(r.min_val, root.val))
-            ret.max_val = max(r.max_val, max(l.max_val, root.val))
+            ret.min_val = l.min_val
+            ret.max_val = r.max_val
             ret.ans     = ret.size
             ret.isBST   = True
             return ret
 
         ret.ans = max(l.ans, r.ans)
         ret.isBST = False
-        return ret
+        return ret;
+
 
 
 ```

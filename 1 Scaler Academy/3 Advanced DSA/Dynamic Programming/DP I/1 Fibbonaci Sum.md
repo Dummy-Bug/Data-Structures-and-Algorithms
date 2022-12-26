@@ -108,3 +108,27 @@ if __name__ == '__main__':
     main()
 
 ```
+
+
+```
+
+def main():
+    
+    val = int( input() );
+    first,second = 1,0;
+
+    for i in range(2,val+1):
+        summ =  first+second;
+        second = first;
+        first  = summ;
+        
+    print(first);
+        
+
+
+    return 0
+
+if __name__ == '__main__':
+    main()
+
+```

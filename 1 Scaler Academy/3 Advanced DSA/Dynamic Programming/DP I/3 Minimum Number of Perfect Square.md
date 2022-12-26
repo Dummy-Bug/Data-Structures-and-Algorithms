@@ -1,4 +1,5 @@
-Problem Description
+#### Problem Description
+
 Given an integer A. Return minimum count of numbers, sum of whose squares is equal to A.
 
 

@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 You are climbing a staircase and it takes A steps to reach the top.
 
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
@@ -52,21 +53,20 @@ Explanation 2:
  
  ```
  
- class Solution:
+class Solution:
 	# @param A : integer
 	# @return an integer
 	def climbStairs(self, val):
 
         temp_arr = [-1]*(val+1); mod = 1000000007;
 
-        temp_arr[0] = 1; temp_arr[1] = 1;
-        # As mentioned in question it takes A steps to reach the top
-        # Hence temp_arr[0] should be 1;take A = 3 and check.
+        temp_arr[0] = 1; temp_arr[1] = 2;
 
         for i in range(2,len(temp_arr)):
             temp_arr[i] = ( temp_arr[i-1] + temp_arr[i-2] )%mod;
         
-        return temp_arr[val];
+        return temp_arr[val-1];
+
 
 
  

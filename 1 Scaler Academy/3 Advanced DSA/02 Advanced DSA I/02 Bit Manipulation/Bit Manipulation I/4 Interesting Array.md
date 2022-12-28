@@ -84,12 +84,12 @@ Explanation 2:
  
  class Solution:
     def solve(self, A):
-        xor = 0;
+        Sum = 0;
 
         for i in range(len(A)):
-            xor = xor + A[i];
+            Sum = Sum + A[i];
         
-        if xor%2 != 0:
+        if Sum%2 != 0:
             return 'No';
         else:
             return 'Yes';

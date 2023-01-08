@@ -65,10 +65,11 @@ class Solution:
 
     def solve(self, A):
 
-        if A < 10:
-            return A;
+        if A == 0:
+            return 0;
         
         return self.solve(A//10) + A%10;
+
 
 
 ```

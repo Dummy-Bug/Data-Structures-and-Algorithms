@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 Given a sequence f(A) = f(A-1) + f(A-2) + f(A-3) + A . Calculate the Ath term of the sequence.
 
 Given f(0)=1; f(1)=1; f(2)=2;

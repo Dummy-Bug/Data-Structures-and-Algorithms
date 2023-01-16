@@ -72,7 +72,7 @@ Finally,the answer must be between 0 and A * min(B,C).
 
 If x increases f(x) increases, we can use binary search on x to find the Ath number.
 
-Algorithm:
+Algorithm: Not implemented in code but this is better wayyy...
 1) Low=1 and High = A * min(B,C)
 2) Find mid = (low + high)/2
 3) Find f(mid) let it be count

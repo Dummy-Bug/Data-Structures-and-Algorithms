@@ -1,3 +1,5 @@
+### Problem Description 
+
 Given an directed graph having A nodes labelled from 1 to A containing M edges given by matrix B of size M x 2such that there is a edge directed from node
 
 B[i][0] to node B[i][1].

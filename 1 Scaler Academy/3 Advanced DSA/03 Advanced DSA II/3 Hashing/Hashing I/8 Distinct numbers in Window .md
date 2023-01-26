@@ -63,7 +63,7 @@ This structure is a hashmap. All operations that we have said a constant time in
 
  ```
  
- class Solution:
+class Solution:
 
     def dNums(self, A, B):
 

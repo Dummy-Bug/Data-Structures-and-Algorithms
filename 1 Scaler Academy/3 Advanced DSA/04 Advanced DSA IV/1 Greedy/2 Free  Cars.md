@@ -1,6 +1,5 @@
+### Problem Description
 
-
-Problem Description
 Given two arrays, A and B of size N. A[i] represents the time by which you can buy the ith car without paying any money.
 
 B[i] represents the profit you can earn by buying the ith car. It takes 1 minute to buy a car, so you can only buy the ith car when the current time <= A[i] - 1.

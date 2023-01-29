@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 The local ship renting service has a special rate plan:
 
 It is up to a passenger to choose a ship.

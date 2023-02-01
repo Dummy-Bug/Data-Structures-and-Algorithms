@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 Given an array of size N of candidate numbers A and a target number B. Return all unique combinations in A where the candidate numbers sums to B.
 
 Each number in A may only be used once in the combination.

@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 Given an array of candidate numbers A and a target number B, find all unique combinations in A where the candidate numbers sums to B.
 
 The same repeated number may be chosen from A unlimited number of times.

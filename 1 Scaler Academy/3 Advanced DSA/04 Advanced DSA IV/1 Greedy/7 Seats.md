@@ -1,4 +1,5 @@
-Problem Description
+### Problem Description
+
 There is a row of seats represented by string A. Assume that it contains N seats adjacent to each other.
 There is a group of people who are already seated in that row randomly. i.e. some are sitting together & some are scattered.
 

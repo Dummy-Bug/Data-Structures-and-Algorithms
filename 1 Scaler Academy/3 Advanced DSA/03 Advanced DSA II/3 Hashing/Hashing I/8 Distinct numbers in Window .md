@@ -80,13 +80,13 @@ class Solution:
             if j-i+1 < B:
                 if freq_map[A[j]] == 0:
                     curr_count += 1;
-                elif freq_map[A[j]] == 1:
-                    curr_count -= 1;
+
                 freq_map[A[j]] += 1;
                 j += 1;
 
             else:
                 if freq_map[A[j]] == 0:
+                    freq_map[A[j]] = 0;
                     curr_count += 1;
 
                 freq_map[A[j]] += 1;
@@ -100,5 +100,6 @@ class Solution:
             
     
         return result;
+
         
  ```

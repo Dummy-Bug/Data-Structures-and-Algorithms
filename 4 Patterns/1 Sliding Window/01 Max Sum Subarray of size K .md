@@ -8,7 +8,6 @@ https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1?utm
 
 ```
 
-//User function Template for Java
 class Solution
 {
     static long maximumSumSubarray(int K, ArrayList<Integer> Arr,int N)
@@ -39,4 +38,4 @@ class Solution
     
     }
 
-    ```
+```

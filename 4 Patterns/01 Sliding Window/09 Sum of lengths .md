@@ -67,9 +67,10 @@ class Solution
             while( (j<arr.length)&&(!set.contains(arr[j]) ) )
             {
                 set.add(arr[j]);
+                result = result + ( (j-i+1)*(j-i+2) )/2;
                 j += 1;
             }
-            result = result + ( (j-i)*(j-i+1) )/2;
+            
             set.remove(arr[i]);
             i += 1;
             

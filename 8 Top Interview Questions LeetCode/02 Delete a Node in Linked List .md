@@ -55,8 +55,13 @@ The node to be deleted is in the list and is not a tail node.
  */
 class Solution {
     public void deleteNode(ListNode node) {
-        node.val  = node.next.val;
-        node.next = node.next.next;
+        // Since we know input node is not last node, so nextNode will not be null
+        ListNode nextNode = node.next;
+        // Step 2
+        node.val = nextNode.val;
+        // Step 3
+        node.next = nextNode.next;
+        nextNode.next = null;
     }
 }
 

@@ -93,3 +93,37 @@ class Solution:
         return -1
 
 ```
+
+**Better Solution**
+
+```
+
+class Solution:
+
+    def solve(self, A):
+
+        if len(A) == 1:
+            return A[0]
+
+        if A[0] > A[1]:
+            return A[0];
+        if A[-1]>A[-2]:
+            return A[-1];
+        low  = 1;
+        high = len(A)-2;
+
+        while low <= high:
+
+            mid = low + (high-low)//2;
+
+            if A[mid-1] <= A[mid] >= A[mid+1]:
+                return A[mid];
+            if A[mid] < A[mid+1]:
+                low = mid + 1;
+            else:
+                high = mid - 1;
+        
+        return -1
+
+
+```

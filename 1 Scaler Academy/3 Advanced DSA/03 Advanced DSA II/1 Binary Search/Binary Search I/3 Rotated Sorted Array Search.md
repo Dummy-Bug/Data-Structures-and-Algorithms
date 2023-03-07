@@ -118,48 +118,72 @@ Indecisive. We would need to explore the whole array.
 ```
 
 class Solution:
+    def getPivot(self,nums):
+        low = 0
+        hi  = len(nums)-1
+        while low <= hi:
+            mid = (low+hi)//2
+            
+            if nums[mid] >= nums[low] and nums[mid] <= nums[hi]:
+                return low
+            else: # iske andar nums[low] would be > nums[hi] always 
+                if  nums[mid] > nums[hi]:
+                    low = mid + 1
+                
+                elif nums[mid] < nums[hi]:
+                    hi = mid
+    def search(self, nums, target):
 
-    def find_pivot(self,A):
+        ln = len(nums)
+        minimum = float('inf')
+        
+        pivot = self.getPivot(nums)
+        
+        low = pivot
+        hi  = pivot + ln - 1
+        while low <= hi:
+            mid = (low + hi)//2 
+            middle = mid%ln
+            if nums[middle] == target:
+                return middle
+            elif nums[middle] > target:
+                hi = mid - 1
+            else:
+                low = mid + 1          
+        return -1
+         
 
+```
+
+
+**Pro Code**
+
+
+```
+
+class Solution:
+    def search(self, A: List[int], B: int) -> int:
         low  = 0;
         high = len(A)-1;
-
-        while low <= high:
-            
-            mid = (low  + high)//2;
-
-            if A[low] <= A[mid] <= A[high]:
-                return low;
-            
-            elif A[low] > A[mid]:
-                high = mid - 1;
-            
-            elif A[high] < A[mid]:
-                low = mid + 1;
-
-
-    def search(self, A, B):
-
-        pivot_index = self.find_pivot(A);
-        low  = pivot_index;
-        high = len(A)-1 + pivot_index;
-
-        while low <= high:
-
-            mid    = (low+high)//2;
-            middle = (mid)%len(A);
-
-            if A[middle] == B:
-                return middle;
-            
-            if A[middle] > B:
-                high = mid - 1;
-            
-            else:
-                low = mid + 1;
         
+        while low <= high :
+            
+            mid = low + (high-low)//2;
+            
+            if A[mid] == B:
+                return mid;
+                
+            if A[low] <= A[mid]:
+                
+                if A[low] <= B and B <= A[mid]:
+                    high = mid - 1;
+                else:
+                    low  = mid + 1; 
+            else:
+                if A[mid] <= B and B <= A[high]:
+                    low = mid + 1;
+                else:
+                    high = mid - 1
         return -1
-
-         
 
 ```

@@ -67,23 +67,22 @@ class Solution:
 
 ```
 
-class Solution:
-    # @param A : list of integers
-    # @param B : integer
-    # @return an integer
-    def searchInsert(self, A, B):
-        n = len(A)
-        low = 0
-        high = n - 1
-        while low <= high:
-            mid = (low + high) / 2
-            mid = int(mid)
-            if A[mid] == B:
-                return mid
-            elif A[mid] < B:
-                low = mid + 1
-            else:
-                high = mid - 1
-        return low
+public class Solution {
+  public int searchInsert(int[] A, int B) {
+        int l = 0, h = A.length - 1;
+        int ans = A.length;
+        while (l <= h) {
+            int mid = l + (h - l) / 2;
+            if (A[mid] > B) {
+                ans = Math.min(ans, mid);
+                h = mid - 1;
+            } else if (A[mid] < B) {
+                l = mid + 1;
+            } else 
+                return mid;
+        }
+        return ans;
+    }
+}
 
 ```

@@ -86,7 +86,6 @@ class Solution:
 
             else:
                 if freq_map[A[j]] == 0:
-                    freq_map[A[j]] = 0;
                     curr_count += 1;
 
                 freq_map[A[j]] += 1;

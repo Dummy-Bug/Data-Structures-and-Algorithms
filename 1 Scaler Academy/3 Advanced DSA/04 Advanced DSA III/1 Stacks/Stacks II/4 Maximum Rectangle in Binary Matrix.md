@@ -1,5 +1,3 @@
-###  Maximum Rectangle in Binary Matrix.md
-
 ### Maximum Rectangle in Binary Matrix
 
 https://leetcode.com/problems/maximal-rectangle/

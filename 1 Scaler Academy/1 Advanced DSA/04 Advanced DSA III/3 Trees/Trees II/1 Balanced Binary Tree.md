@@ -21,21 +21,21 @@ class Solution:
     def isBalanced(self, A):
         
         result = self.helper(A);
-        return 1 if result != 0 else 0;
+        return 1 if result != -1 else 0;
     
     def helper(self,node):
         
         if node == None:
-            return 1;
+            return 0;
         
         left_depth  = self.helper(node.left);
         right_depth = self.helper(node.right);
         
-        if left_depth == 0 or right_depth == 0:
-            return 0;
+        if left_depth == -1 or right_depth == -1:
+            return -1;
         if abs(left_depth-right_depth) < 2:
             return 1 + max(left_depth,right_depth);
         else:
-            return 0
+            return -1
 
 ```

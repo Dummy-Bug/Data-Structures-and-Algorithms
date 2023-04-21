@@ -56,7 +56,7 @@ class Solution:
 			stack.append(i);
 
 		nsr = nsr[::-1];
-		max_area = 0;print(nsl,nsr)
+		max_area = 0;print(nsl,nsr);
         
 		for i in range(len(A)):
 

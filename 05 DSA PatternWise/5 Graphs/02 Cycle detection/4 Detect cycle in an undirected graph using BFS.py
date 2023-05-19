@@ -1,3 +1,4 @@
+# can't solve it without predecessor array 
 class Solution:
 	def isCycle(self, V, adj):
 		self.color = ['white']*V

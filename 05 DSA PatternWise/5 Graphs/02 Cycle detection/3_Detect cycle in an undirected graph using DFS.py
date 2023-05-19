@@ -1,3 +1,4 @@
+# Can be solved without the predecessor array as we can take prev node as paramater and solve it easily
 class Solution:
 	def isCycle(self, V, adj):
 	    

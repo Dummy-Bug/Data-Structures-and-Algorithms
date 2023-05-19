@@ -1,3 +1,5 @@
+#  This Solution is Wrong and moreover kahn's algorithm is for topological sorting which is for directed graphs not for undirected graphs.
+
 class Solution:
     def isCyclic(self, V, adj):
         from collections import deque

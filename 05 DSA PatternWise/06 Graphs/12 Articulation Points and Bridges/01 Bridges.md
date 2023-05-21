@@ -1,9 +1,12 @@
+```
+
+
 def Bridges(self,V,graph):
     
     self.visited = [False for i in range(V)]
     self.parent  = [-1 for i in range(V)]
     self.disc    = [float("inf") for i in range(V)] # dicovery time 
-    self.low     = [float("inf") for i in range(V)] 
+    self.lowestReachableTime     = [float("inf") for i in range(V)] 
     self.brides  = []
     self.time    = 0
     
@@ -14,7 +17,7 @@ def Bridges(self,V,graph):
 def dfs(self,u,graph):
     
     self.disc[u] = self.time 
-    self.low[u]  = self.time
+    self.lowestReachableTime[u]  = self.time
     self.time    = self.time + 1
     self.visited[u] = True
     
@@ -26,11 +29,13 @@ def dfs(self,u,graph):
             self.parent[v] = self.parent[u]
             self.dfs(v,graph)
             
-            self.low[u] = min(self.low[u],self.low[v])
+            self.lowestReachableTime[u] = min(self.lowestReachableTime[u],self.lowestReachableTime[v])
 
-            if self.low[v] >= self.disc[u]:
+            if self.lowestReachableTime[v] >= self.disc[u]:
                 self.bridges.append([u,v])
                 
         elif v != self.parent[u]: # back edge
-            self.low[u] = min(self.low[u] , self.disc[v])
+            self.lowestReachableTime[u] = min(self.lowestReachableTime[u] , self.disc[v])
     
+    
+    ```

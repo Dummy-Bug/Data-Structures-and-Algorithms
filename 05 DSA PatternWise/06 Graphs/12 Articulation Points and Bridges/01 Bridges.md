@@ -7,7 +7,7 @@ def Bridges(self,V,graph):
     self.parent  = [-1 for i in range(V)]
     self.disc    = [float("inf") for i in range(V)] # dicovery time 
     self.lowestReachableTime     = [float("inf") for i in range(V)] 
-    self.brides  = []
+    self.bridges  = []
     self.time    = 0
     
     for i in range(V):

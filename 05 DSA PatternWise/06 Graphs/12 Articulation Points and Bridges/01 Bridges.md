@@ -43,10 +43,10 @@ class Solution:
 
     def criticalConnections(self, n: int, connections: List[List[int]]):
         
-        self.lrt      = [float("inf") for i in range(n)];
+        self.lowestTime      = [float("inf") for i in range(n)];
+        # self.lowestTime represents lowest time in the connected component
         self.discTime = [float("inf") for i in range(n)];
         self.visited  = [False for i in range(n)];
-        
         for edge in connections:
             self.graph[edge[0]].append(edge[1]);
             self.graph[edge[1]].append(edge[0]);
@@ -54,7 +54,7 @@ class Solution:
         return self.dfs(0,-1);
     
     def dfs(self,src,parent):
-        self.lrt[src] = self.discTime[src] = self.time;
+        self.lowestTime[src] = self.discTime[src] = self.time;
         self.time += 1;
         self.visited[src] = True;
 
@@ -64,8 +64,8 @@ class Solution:
             if self.visited[dst] == False:
                 self.dfs(dst,src);
                 # now the dfs(v) has completed done and dusted;
-                self.lrt[src] = min(self.lrt[src],self.lrt[dst]);
-                if self.lrt[dst] > self.discTime[src]:
+                self.lowestTime[src] = min(self.lowestTime[src],self.lowestTime[dst]);
+                if self.lowestTime[dst] > self.discTime[src]:
                     # if lowest reachable time of adjacent node is
                     # more than discovery/insertion time of current node
                     # then it means there is no other way of reaching to 
@@ -74,8 +74,15 @@ class Solution:
             else:
                 # if dst is already visited then obviously bridge is
                 #  not possible so just update the lrt;
-                self.lrt[src] = min(self.lrt[src],self.lrt[dst]);
+                self.lowestTime[src] = min(self.lowestTime[src],self.lowestTime[dst]);
         return self.bridges;
+
+
+
+
+
+
+        
 
         
     

@@ -31,7 +31,7 @@ def dfs(self,u,graph):
             
             self.lowestReachableTime[u] = min(self.lowestReachableTime[u],self.lowestReachableTime[v])
 
-            if self.lowestReachableTime[v] >= self.disc[u]:
+            if self.lowestReachableTime[v] > self.disc[u]:
                 self.bridges.append([u,v])
                 
         elif v != self.parent[u]: # back edge

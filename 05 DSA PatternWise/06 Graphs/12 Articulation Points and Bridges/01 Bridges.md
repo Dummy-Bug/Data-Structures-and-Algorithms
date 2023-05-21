@@ -44,7 +44,7 @@ class Solution:
     def criticalConnections(self, n: int, connections: List[List[int]]):
         
         self.lowestTime      = [float("inf") for i in range(n)];
-        # self.lowestTime represents lowest time in the connected component
+        # self.lowestTime represents lowest time in all the adjacent nodes
         self.discTime = [float("inf") for i in range(n)];
         self.visited  = [False for i in range(n)];
         for edge in connections:

@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "61f45e5277a45b9c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ee2743c25309363",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b77798e3ae421cf6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "High Level Design/01 Introduction to HLD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e921c2bee35e04c",
+    "type": "split",
+    "children": [
+      {
+        "id": "80c9d1a9caa8e64b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aef62a3851cea70d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b1cf88cfc5dd0e60",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9f7aaade8156fe9e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 239.50260543823242
+  },
+  "right": {
+    "id": "da6364cb452a6965",
+    "type": "split",
+    "children": [
+      {
+        "id": "e279494a2fa762ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7389ad04a169fa19",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "High Level Design/01 Introduction to HLD.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d9a1f9b9cb0aa27a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "High Level Design/01 Introduction to HLD.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "98ac1539a65d9740",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "cdae7a12bb69a83c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "High Level Design/01 Introduction to HLD.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b77798e3ae421cf6",
+  "lastOpenFiles": [
+    "upStart/Startup Terms Every Entrepreneur Should Know.md",
+    "Pasted image 20240221100159.png",
+    "Pasted image 20240221095932.png",
+    "fromYC/Should you start a startup?.md",
+    "upStart",
+    "High Level Design/06 CAP Theorem.md",
+    "High Level Design/05 Caching case studies.md",
+    "High Level Design/09 No SQL conclusions.md",
+    "High Level Design/08 Types of No SQL DBs.md",
+    "High Level Design/07 No SQL databases.md",
+    "High Level Design/04 Caching.md",
+    "High Level Design/03 Consistent Hashing.md",
+    "High Level Design/02 Load Balancer.md",
+    "High Level Design/01 Introduction to HLD.md",
+    "Pasted image 20240201233101.png",
+    "Pasted image 20240201232806.png",
+    "Pasted image 20240201211805.png",
+    "Pasted image 20240201210952.png",
+    "Pasted image 20240201210422.png",
+    "Pasted image 20240201210138.png",
+    "Pasted image 20240201205837.png",
+    "Pasted image 20240201205807.png",
+    "Untitled.md",
+    "High Level Design",
+    "fromBooks",
+    "fromYC",
+    "fromPodcasts"
+  ]
+}

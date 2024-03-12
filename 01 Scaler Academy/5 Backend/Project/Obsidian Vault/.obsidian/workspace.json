@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "6a81e0515686b4d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "fea79aedec7e040d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63d25d2216791eea",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d6e038ba92d3b43",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4cf2505d933d30c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5174066125ed99aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d66f165b7bf5b7f7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "97fd0c850ebc9218",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1a98a4e5e8cdebca",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef470f3481cfb9e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30e9a54f021290fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a4f15628ad8cd9d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d8c7861668e09981",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "98ad2a41954a0d61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "63d25d2216791eea",
+  "lastOpenFiles": [
+    "startingUp/fromYC/1.0 should you start a startup?.md",
+    "startingUp/fromYC/1.0 why to start a startup?.md",
+    "startingUp/fromYC/1.0.md",
+    "startingUp/fromYC/1 why to start a startup?.md",
+    "startingUp/fromYC/1 How to start a startup?.md",
+    "startingUp/fromYC/Untitled.md",
+    "startingUp/Untitled.md",
+    "startingUp/fromBooks",
+    "startingUp/Untitled",
+    "startingUp/fromYC",
+    "startingUp/fromPodcasts",
+    "startingUp",
+    "startingUp/How to start a startup?.md",
+    "journal",
+    "journal.md",
+    "Untitled.md"
+  ]
+}

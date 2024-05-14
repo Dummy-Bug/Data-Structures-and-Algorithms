@@ -61,3 +61,28 @@ class Solution:
         return max_sum
   ```
 
+### Java Code
+
+
+```
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        return getMaxSubArraySum(nums,currSum,maxSum);
+    }
+    private int getMaxSubArraySum(int[] nums, int currSum , int maxSum) {
+        for (int currElement : nums){
+            currSum += currElement;
+            maxSum = Math.max(currSum , maxSum);
+            if (currSum < 0){
+                currSum = 0; // reset the sum
+            }
+        }
+        return maxSum;
+    }
+}
+
+```

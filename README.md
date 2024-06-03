@@ -12,5 +12,5 @@ This repository contains a list of most asked Data Structures and Algorithms (DS
 * 05 [Patterns](05%20DSA%20PatternWise) - Contains questions related to common coding patterns.
 
 
-### Contributions 🤫 .......
+### Contributions 🤫 
 Contributions are welcome! Feel free to open a pull request or issue if you would like to add or suggest any changes.
